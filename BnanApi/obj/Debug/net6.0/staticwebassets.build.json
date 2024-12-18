@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ylG+Ys6t8P0pLdsJnwPiQXfwaU7+kO1TkhMiVUQoZNo=",
+  "Source": "BnanApi",
+  "BasePath": "_content/BnanApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BnanApi\\wwwroot",
+      "Source": "BnanApi",
+      "ContentRoot": "E:\\Work\\8-3-2024\\Projects\\BnanApi\\BnanApi\\wwwroot\\",
+      "BasePath": "_content/BnanApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
