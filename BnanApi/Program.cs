@@ -1,6 +1,7 @@
 using BnanApi.DTOS;
 using BnanApi.Models;
 using BnanApi.Services.Email;
+using BnanApi.Services.Whatsup;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,8 @@ builder.Services.AddCors(options => options.AddPolicy("CorsPolicy", build =>
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddTransient<IMailingService, MailingService>();
+builder.Services.AddTransient<IWhatsupService, WhatsupService>();
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 
